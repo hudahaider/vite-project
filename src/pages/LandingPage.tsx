@@ -1,12 +1,10 @@
 import FooterSection from "../components/landing/FooterSection";
-import HeaderSection from "../components/landing/HeaderSection";
-import HeroSection from "../components/landing/HeroSection";
+import HeroSection1 from "../components/landing/HeroSection1";
 
 const LandingPage = () => {
   return (
     <>
-      <HeaderSection />
-      <HeroSection />
+      <HeroSection1 />
       <FooterSection />
     </>
   );

@@ -3,7 +3,7 @@ const SigninForm = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-b from-purple-200 via-purple-300 to-purple-400 px-4">
       {/* Card */}
-      <div className="w-full max-w-md bg-white/40 backdrop-blur-lg shadow-xl rounded-2xl p-8 border border-white/30">
+      <div className=" bg-white/40 shadow-xl rounded-2xl p-8 border border-white/30">
         <h2 className="text-2xl font-semibold text-center text-gray-800">
           Sign in with email
         </h2>
@@ -13,7 +13,7 @@ const SigninForm = () => {
         </p>
 
         <div className="flex items-center bg-white/70 rounded-lg px-3 py-2 mb-4">
-          <Mail size={18} className="text-gray-500 mr-2" />
+          <Mail size={18} className="text-slate-500 mr-2" />
           <input
             type="email"
             placeholder="Email"
@@ -22,29 +22,29 @@ const SigninForm = () => {
         </div>
 
         <div className="flex items-center bg-white/70 rounded-lg px-3 py-2 mb-2">
-          <Lock size={18} className="text-gray-500 mr-2" />
+          <Lock size={18} className="text-slate-500 mr-2" />
           <input
             type="password"
             placeholder="Password"
             className="bg-transparent outline-none w-full text-sm"
           />
-          <EyeOff size={18} className="text-gray-500 cursor-pointer" />
+          <EyeOff size={18} className="text-slate-500 cursor-pointer" />
         </div>
 
-        <div className="text-right text-sm text-gray-600 mb-4">
+        <div className="text-right text-sm text-slate-600 mb-4">
           <a href="#" className="hover:text-purple-600">
             Forgot password?
           </a>
         </div>
 
-        <button className="w-full bg-purple-800 text-white py-2 rounded-lg font-medium hover:bg-purple-600 hover:opacity-90 transition">
+        <button className="w-full bg-purple-800 text-white py-2 rounded-lg font-medium hover:bg-purple-600">
           Get Started
         </button>
 
         <div className="flex items-center my-6">
-          <div className="flex-1 border-t border-gray-300"></div>
-          <span className="px-3 text-sm text-gray-500">Or sign in with</span>
-          <div className="flex-1 border-t border-gray-300"></div>
+          <div className="flex-1 border-t border-slate-500"></div>
+          <span className="px-3 text-sm text-slate-500">Or sign in with</span>
+          <div className="flex-1 border-t border-slate-500"></div>
         </div>
 
         <div className="flex justify-center gap-4">

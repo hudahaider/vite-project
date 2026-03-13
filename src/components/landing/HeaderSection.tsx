@@ -1,56 +1,29 @@
 import { Link } from "react-router";
-import { Menu } from "lucide-react";
 
 const HeaderSection = () => {
   return (
-    <header className="bg-purple-950 border-b py-8 px-12">
-      <nav className="flex gap-2 justify-between items-center text-white md:flex-col lg:flex-row">
-        <h1 className="text-4xl font-extrabold text-white leading-tight">
-          AI Tool
-        </h1>
+    <header className="py-14 px-12">
 
-        <div className="hidden md:flex gap-8 text-2xl font-bold text-white leading-tight">
+        <div className="flex gap-12 justify-center items-center text-2xl font-semibold text-slate-200 leading-tight">
           <Link
-            className="hover:text-purple-400 hover:underline hover:decoration-purple-400"
-            to="/home page"
+            className="hover:text-blue-400 hover:underline hover:decoration-blue-400"
+            to="/home"
           >
             Home
           </Link>
           <Link
-            className="hover:text-purple-400 hover:underline hover:decoration-purple-400"
-            to="/features page"
+            className="hover:text-blue-400 hover:underline hover:decoration-blue-400"
+            to="/features"
           >
             Features
           </Link>
           <Link
-            className="hover:text-purple-400 hover:underline hover:decoration-purple-400"
-            to="/pricing page"
+            className="hover:text-blue-400 hover:underline hover:decoration-blue-400"
+            to="/pricing "
           >
             Pricing
           </Link>
         </div>
-
-        <div className="hidden md:flex gap-4 text-2xl">
-          <Link
-            className="bg-purple-500 hover:bg-purple-400 py-2 px-8 rounded-md text-white"
-            to="/signin-form page"
-          >
-            SignIn
-          </Link>
-          <Link
-            className="border py-2 px-8 rounded-md hover:bg-purple-400"
-            to="/signup-form page"
-          >
-            SignUp
-          </Link>
-        </div>
-
-        <div className="md:hidden">
-          <button className="text-white p-2">
-            <Menu size={32} />
-          </button>
-        </div>
-      </nav>
     </header>
   );
 };
